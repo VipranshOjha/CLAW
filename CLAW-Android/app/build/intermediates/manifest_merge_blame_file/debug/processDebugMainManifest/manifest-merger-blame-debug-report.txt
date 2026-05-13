@@ -1,0 +1,165 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.clawlite"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="28"
+8-->INJECTED
+9        android:targetSdkVersion="34" />
+9-->INJECTED
+10
+11    <!-- Traditional Bluetooth Permissions for older Android versions -->
+12    <uses-permission
+12-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:6:5-95
+13        android:name="android.permission.BLUETOOTH"
+13-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:6:22-65
+14        android:maxSdkVersion="30" />
+14-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:6:66-92
+15    <uses-permission
+15-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:7:5-101
+16        android:name="android.permission.BLUETOOTH_ADMIN"
+16-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:7:22-71
+17        android:maxSdkVersion="30" />
+17-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:7:72-98
+18
+19    <!-- Modern Android 12+ Bluetooth Permissions -->
+20    <!-- CONNECT is required to connect to a paired PC/Host -->
+21    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+21-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:11:5-76
+21-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:11:22-73
+22    <!-- ADVERTISE is required to act as a HID Peripheral device -->
+23    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+23-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:13:5-78
+23-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:13:22-75
+24    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+24-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:14:5-73
+24-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:14:22-70
+25
+26    <!-- Feature requirement: Ensure the device supports Bluetooth -->
+27    <uses-feature
+27-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:17:5-87
+28        android:name="android.hardware.bluetooth"
+28-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:17:19-60
+29        android:required="true" />
+29-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:17:61-84
+30
+31    <permission
+31-->[androidx.core:core:1.12.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\111d47de4fa327f16e85bfe1bab79773\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+32        android:name="com.example.clawlite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+32-->[androidx.core:core:1.12.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\111d47de4fa327f16e85bfe1bab79773\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+33        android:protectionLevel="signature" />
+33-->[androidx.core:core:1.12.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\111d47de4fa327f16e85bfe1bab79773\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+34
+35    <uses-permission android:name="com.example.clawlite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+35-->[androidx.core:core:1.12.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\111d47de4fa327f16e85bfe1bab79773\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+35-->[androidx.core:core:1.12.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\111d47de4fa327f16e85bfe1bab79773\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+36
+37    <application
+37-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:19:5-35:19
+38        android:allowBackup="true"
+38-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:20:9-35
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.12.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\111d47de4fa327f16e85bfe1bab79773\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+40        android:debuggable="true"
+41        android:extractNativeLibs="false"
+41-->INJECTED
+42        android:label="CLAW Lite"
+42-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:21:9-34
+43        android:supportsRtl="true"
+43-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:22:9-35
+44        android:testOnly="true"
+45        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+45-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:23:9-65
+46        <activity
+46-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:25:9-34:20
+47            android:name="com.example.clawlite.MainActivity"
+47-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:26:13-41
+48            android:configChanges="orientation|keyboardHidden|screenSize"
+48-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:29:13-74
+49            android:exported="true"
+49-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:27:13-36
+50            android:screenOrientation="landscape" >
+50-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:28:13-50
+51            <intent-filter>
+51-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:30:13-33:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:31:17-69
+52-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:31:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:32:17-77
+54-->C:\Users\ojhav\OneDrive\Desktop\Python\CLAW\CLAWv2\app\src\main\AndroidManifest.xml:32:27-74
+55            </intent-filter>
+56        </activity>
+57
+58        <provider
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\bd72b61d644dff71932d26120d59df84\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+59            android:name="androidx.startup.InitializationProvider"
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\bd72b61d644dff71932d26120d59df84\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+60            android:authorities="com.example.clawlite.androidx-startup"
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\bd72b61d644dff71932d26120d59df84\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+61            android:exported="false" >
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\bd72b61d644dff71932d26120d59df84\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+62            <meta-data
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\bd72b61d644dff71932d26120d59df84\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\bd72b61d644dff71932d26120d59df84\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+64                android:value="androidx.startup" />
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\bd72b61d644dff71932d26120d59df84\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+65            <meta-data
+65-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\9abed52efb03718a5565961959cc82b3\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+66-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\9abed52efb03718a5565961959cc82b3\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+67                android:value="androidx.startup" />
+67-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\9abed52efb03718a5565961959cc82b3\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+68            <meta-data
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+70                android:value="androidx.startup" />
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+71        </provider>
+72
+73        <receiver
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+74            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+75            android:directBootAware="false"
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+76            android:enabled="true"
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+77            android:exported="true"
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+78            android:permission="android.permission.DUMP" >
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+80                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+81            </intent-filter>
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+83                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+84            </intent-filter>
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+86                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+89                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ojhav\.gradle\caches\9.4.1\transforms\e5e465611ac665daa6b1c75d79809e4f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+90            </intent-filter>
+91        </receiver>
+92    </application>
+93
+94</manifest>

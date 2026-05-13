@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CLAW Lite - Gamepad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gamepad-container">
+        <!-- Top Row Triggers/Bumpers -->
+        <div class="shoulder-buttons">
+            <div class="shoulder-left">
+                <button id="btn-lt" class="shoulder-btn trigger">LT</button>
+                <button id="btn-lb" class="shoulder-btn bumper">LB</button>
+            </div>
+            <div class="shoulder-right">
+                <button id="btn-rb" class="shoulder-btn bumper">RB</button>
+                <button id="btn-rt" class="shoulder-btn trigger">RT</button>
+            </div>
+        </div>
+
+        <div class="main-controls">
+            <!-- Left Side -->
+            <div class="left-controls">
+                <div id="left-stick-container" class="stick-container">
+                    <div class="stick">
+                        <div class="stick-knob"></div>
+                    </div>
+                </div>
+                
+                <div class="dpad">
+                    <button id="dpad-up" class="dpad-btn up">▲</button>
+                    <button id="dpad-left" class="dpad-btn left">◀</button>
+                    <div class="dpad-center"></div>
+                    <button id="dpad-right" class="dpad-btn right">▶</button>
+                    <button id="dpad-down" class="dpad-btn down">▼</button>
+                </div>
+            </div>
+
+            <!-- Center Side -->
+            <div class="center-controls">
+                <button id="btn-back" class="center-btn">BACK</button>
+                <div class="logo">CLAW Lite</div>
+                <button id="btn-start" class="center-btn">START</button>
+            </div>
+
+            <!-- Right Side -->
+            <div class="right-controls">
+                <div class="abxy-cluster">
+                    <button id="btn-y" class="action-btn btn-y">Y</button>
+                    <button id="btn-x" class="action-btn btn-x">X</button>
+                    <button id="btn-b" class="action-btn btn-b">B</button>
+                    <button id="btn-a" class="action-btn btn-a">A</button>
+                </div>
+
+                <div id="right-stick-container" class="stick-container">
+                    <div class="stick">
+                        <div class="stick-knob"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
